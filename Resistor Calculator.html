@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>Resistor Calculator</Title>
         
+        <link rel="stylesheet" href="ResistorStyles.css">
+
     </head>
 
     <body>
@@ -16,7 +18,8 @@
 
     <div class="container container-fluid">
         <div class="row flex-column">
-            <div class="col-sm-16 align-items-start"><h2>Resistor Calculator</h2></div>
+            <p></p>
+            <div class="col-sm-16 align-items-start"><h1>Resistor Calculator</h1></div>
             <div class="col-sm-16">
                 <p>The tools below can be used to compute the ohm value and tolerance based on resistor color codes, 
                 the total resistance of a group of resistors in parallel or series, 
@@ -27,7 +30,7 @@
                 <p>By utilizing resistor color codes, this calculator can be used to determine the ohm value and tolerance. </p>
             </div>
     </div>
-
+    <p></p>
     <div class="card-deck d-flex">
             <div class="card border-dark mb-3">
                 <div class="card-body">
@@ -95,13 +98,13 @@
                         <option value="1">Black (x1)</option>
                         <option value="10">Brown (x10)</option>
                         <option value="100">Red (x100)</option>
-                        <option value="1000">Orange (x1000)</option>
-                        <option value="10000">Yellow (x10000)</option>
-                        <option value="100000">Green (x100000)</option>
-                        <option value="1000000">Blue (x1000000)</option>
-                        <option value="10000000">Violet (x10000000)</option>
-                        <option value="100000000">Grey (x100000000)</option>
-                        <option value="1000000000">White (x1000000000)</option>
+                        <option value="1000">Orange (x1K)</option>
+                        <option value="10000">Yellow (x10K)</option>
+                        <option value="100000">Green (x100K)</option>
+                        <option value="1000000">Blue (x1M)</option>
+                        <option value="10000000">Violet (x10M)</option>
+                        <option value="100000000">Grey (x100M)</option>
+                        <option value="1000000000">White (x1G)</option>
                         <option value="0.1">Gold (x0.1)</option>
                         <option value="0.01">Silver (x0.01)</option>
                     </select>
@@ -110,31 +113,31 @@
                     <label>Tolerance:</label>
                     <select id="tole" class="form-group">
                         <option value="0"> -- </option>
-                        <option value="±1% (F)">Brown</option>
-                        <option value="±2% (G)">Red</option>
-                        <option value="±0.05% (W)">Orange</option>
-                        <option value="±0.02% (P)">Yellow</option>
-                        <option value="±0.5% (D)">Green</option>
-                        <option value="±0.25% (C)">Blue</option>
-                        <option value="±0.1% (B)">Violet</option>
-                        <option value="±0.01% (L)">Grey</option>
-                        <option value="±5% (J)">Gold</option>
-                        <option value="±10% (K)">Silver</option>
+                        <option value="±1% (F)">Brown (±1% (F))</option>
+                        <option value="±2% (G)">Red (±2% (G))</option>
+                        <option value="±0.05% (W)">Orange (±0.05% (W))</option>
+                        <option value="±0.02% (P)">Yellow (±0.02% (P))</option>
+                        <option value="±0.5% (D)">Green ±0.5% (D)</option>
+                        <option value="±0.25% (C)">Blue (±0.25% (C))</option>
+                        <option value="±0.1% (B)">Violet (±0.1% (B))</option>
+                        <option value="±0.01% (L)">Grey (±0.01% (L))</option>
+                        <option value="±5% (J)">Gold (±5% (J))</option>
+                        <option value="±10% (K)">Silver (±10% (K))</option>
                     </select>
                 </div>
                 <div id="tempsix" class="band ban6">
                     <label>Temperature Coefficient:</label>
                     <select id="temp" class="form-group">
                         <option value="0"> -- </option>
-                        <option value="250 ppm/K (U)">Black</option>
-                        <option value="100 ppm/K (S)">Brown</option>
-                        <option value="50 ppm/K (R)">Red</option>
-                        <option value="15 ppm/K (P)">Orange</option>
-                        <option value="25 ppm/K (Q)">Yellow</option>
-                        <option value="20 ppm/K (Z)">Green</option>
-                        <option value="10 ppm/K (Z)">Blue</option>
-                        <option value="5 ppm/K (M)">Violet</option>
-                        <option value="1 ppm/K (K)">Grey</option>
+                        <option value="250 ppm/K (U)">Black (250 ppm/K (U))</option>
+                        <option value="100 ppm/K (S)">Brown (100 ppm/K (S))</option>
+                        <option value="50 ppm/K (R)">Red (50 ppm/K (R))</option>
+                        <option value="15 ppm/K (P)">Orange (5 ppm/K (P))</option>
+                        <option value="25 ppm/K (Q)">Yellow (25 ppm/K (Q))</option>
+                        <option value="20 ppm/K (Z)">Green (20 ppm/K (Z))</option>
+                        <option value="10 ppm/K (Z)">Blue (10 ppm/K (Z))</option>
+                        <option value="5 ppm/K (M)">Violet (5 ppm/K (M))</option>
+                        <option value="1 ppm/K (K)">Grey (1 ppm/K (K))</option>
                     </select>
                 </div>
                 <div>

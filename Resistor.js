@@ -18,6 +18,9 @@ $(document).ready(function(){
         $('#multi').prop('selectedIndex', 0);
         $('#tole').prop('selectedIndex', 0);
         $('#temp').prop('selectedIndex', 0);
+        $('#resistorvalue').empty();
+        $('#tolerancevalue').empty();
+        $('#temperaturevalue').empty();
     });
 
     function Calculate(first, second, third, multiplier){
