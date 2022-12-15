@@ -92,53 +92,60 @@
                     <label>Multiplier:</label>
                     <select id="multi" class="form-group">
                         <option> -- </option>
-                        <option value="1">Black</option>
-                        <option value="10">Brown</option>
-                        <option value="100">Red</option>
-                        <option value="1000">Orange</option>
-                        <option value="10000">Yellow</option>
-                        <option value="100000">Green</option>
-                        <option value="1000000">Blue</option>
-                        <option value="10000000">Violet</option>
-                        <option value="100000000">Grey</option>
-                        <option value="1000000000">White</option>
-                        <option value="0.1">Gold</option>
-                        <option value="0.01">Silver</option>
+                        <option value="1">Black (x1)</option>
+                        <option value="10">Brown (x10)</option>
+                        <option value="100">Red (x100)</option>
+                        <option value="1000">Orange (x1000)</option>
+                        <option value="10000">Yellow (x10000)</option>
+                        <option value="100000">Green (x100000)</option>
+                        <option value="1000000">Blue (x1000000)</option>
+                        <option value="10000000">Violet (x10000000)</option>
+                        <option value="100000000">Grey (x100000000)</option>
+                        <option value="1000000000">White (x1000000000)</option>
+                        <option value="0.1">Gold (x0.1)</option>
+                        <option value="0.01">Silver (x0.01)</option>
                     </select>
                 </div>
                 <div id="tolefour" class="band ban4 ban5 ban6">
                     <label>Tolerance:</label>
                     <select id="tole" class="form-group">
-                        <option> -- </option>
-                        <option>Brown</option>
-                        <option>Red</option>
-                        <option>Orange</option>
-                        <option>Yellow</option>
-                        <option>Green</option>
-                        <option>Blue</option>
-                        <option>Violet</option>
-                        <option>Grey</option>
-                        <option>Gold</option>
-                        <option>Silver</option>
+                        <option value="0"> -- </option>
+                        <option value="±1% (F)">Brown</option>
+                        <option value="±2% (G)">Red</option>
+                        <option value="±0.05% (W)">Orange</option>
+                        <option value="±0.02% (P)">Yellow</option>
+                        <option value="±0.5% (D)">Green</option>
+                        <option value="±0.25% (C)">Blue</option>
+                        <option value="±0.1% (B)">Violet</option>
+                        <option value="±0.01% (L)">Grey</option>
+                        <option value="±5% (J)">Gold</option>
+                        <option value="±10% (K)">Silver</option>
                     </select>
                 </div>
                 <div id="tempsix" class="band ban6">
                     <label>Temperature Coefficient:</label>
                     <select id="temp" class="form-group">
-                        <option> -- </option>
-                        <option>Black</option>
-                        <option>Brown</option>
-                        <option>Red</option>
-                        <option>Orange</option>
-                        <option>Yellow</option>
-                        <option>Green</option>
-                        <option>Blue</option>
-                        <option>Violet</option>
-                        <option>Grey</option>
+                        <option value="0"> -- </option>
+                        <option value="250 ppm/K (U)">Black</option>
+                        <option value="100 ppm/K (S)">Brown</option>
+                        <option value="50 ppm/K (R)">Red</option>
+                        <option value="15 ppm/K (P)">Orange</option>
+                        <option value="25 ppm/K (Q)">Yellow</option>
+                        <option value="20 ppm/K (Z)">Green</option>
+                        <option value="10 ppm/K (Z)">Blue</option>
+                        <option value="5 ppm/K (M)">Violet</option>
+                        <option value="1 ppm/K (K)">Grey</option>
                     </select>
                 </div>
                 <div>
                     <a href="#" class="btn btn-primary" id="calculate">Calculate</a>
+                </div>
+                <div>
+                    <p></p>
+                    <h1>Result</h1>
+                    <h5><p id="resistorvalue"></p></h5>
+                    <h5><p id="tolerancevalue"></p></h5>
+                    <h5><p id="temperaturevalue"></p></h5>
                 </div>
             </div>
         </div>
