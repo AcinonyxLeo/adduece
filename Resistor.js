@@ -2,7 +2,7 @@
 $(document).ready(function(){
     
     $('div.band, img.picture').hide();
-    $('img.picture.banthree').show();
+    $('img.picture.ban3').show();
 
     $('#selection').on('change', function(){
         var bvalue = $(this).val();
@@ -11,20 +11,20 @@ $(document).ready(function(){
         $('img.picture.ban' + bvalue).show();
     });
 
-    function Calculate(first, second, multiplier){
-        resistor = (first+second)*multiplier
-        return resistor         
-    };
+    function Calculate(first, second, third, multiplier){
+        resistor = (first+second+third)*multiplier
+        return resistor       
+        
+    }
 
     $('#calculate').click(function(){
 
-        var first = $('#1stband').val();
-
-        var second = $('#2ndband').val();
-
+        var first = $('#1stBand').val();
+        var second = $('#2ndBand').val();
+        var third = $('#3rdBand').val();
         var multiplier = $('#multi').val();
 
-        testband = Calculate(first,second,multiplier);
+        testband = Calculate(first,second,third,multiplier);
 
         $('#resistorvalue').text(testband);
 
